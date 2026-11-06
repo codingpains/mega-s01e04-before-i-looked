@@ -1,8 +1,9 @@
 ---
 plan: morning-digest
-status: ready
+status: done
 owner: rook
 opened: 2026-10-29
+closed: 2026-11-06
 ---
 
 # Morning digest
@@ -77,3 +78,20 @@ page again with `LANE_MARKER` unset (the banner reads "no marker set") and uploa
 link. Move this plan to `docs/plans/done/` with its issue list.
 
 Done when: the preview link no longer shows the lane marker.
+
+## Issues
+
+| # | Issue | Blocked by | Worker | Closed |
+|---|-------|-----------|--------|--------|
+| 1 | Digest types | — | claude-code · opus-5.5 · default | 2026-11-05 |
+| 2 | Run log reader | #1 | claude-code · opus-5.5 · default | 2026-11-05 |
+| 3 | Digest page | #1 | claude-code · sonnet-5.5 · default | 2026-11-05 |
+| 4 | Digest JSON | #1 | claude-code · haiku-5.5 · default | 2026-11-05 |
+| 5 | Board link | #1 | claude-code · sonnet-5.5 · default | 2026-11-05 |
+| 6 | Route tests | #1 | claude-code · haiku-5.5 · default | 2026-11-05 |
+| 7 | Preview for review | #3 | claude-code · opus-5.5 · high | 2026-11-05 |
+| 8 | Clean up | #7, review | claude-code · opus-5.5 · high | 2026-11-06 |
+
+#7 was first closed when the link was sent and reopened until the reviewer had seen it.
+Section 1 became two issues so section 2 could start against the types alone. The host's
+per-upload links were turned off in #8, because the first upload's own link kept the marker.
